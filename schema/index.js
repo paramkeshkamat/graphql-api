@@ -5,6 +5,7 @@ const schema = buildSchema(`
         id: ID!
         title: String
         body: String
+        user: User
     }   
         
     type User {
@@ -45,6 +46,7 @@ const schema = buildSchema(`
     input AddPostInput {
         title: String!
         body: String!
+        userId: ID!
     }
     input UpdatePostInput {
         title: String!
