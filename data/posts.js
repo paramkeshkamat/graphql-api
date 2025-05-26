@@ -1,10 +1,10 @@
-let posts = [
+export const posts = [
   {
     id: "1",
     title:
       "test data sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-    userId: "2"
+    userId: "2",
   },
   {
     id: "2",
@@ -82,7 +82,7 @@ let posts = [
     id: "14",
     title: "voluptatem eligendi optio",
     body: "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum",
-    userId: "2"
+    userId: "2",
   },
   {
     id: "15",
@@ -305,5 +305,3 @@ let posts = [
     userId: "1",
   },
 ];
-
-module.exports = { posts };

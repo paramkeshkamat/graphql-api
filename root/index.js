@@ -1,5 +1,5 @@
-let { posts } = require("../data/posts");
-let { users } = require("../data/users");
+import { posts } from "../data/posts";
+import { users } from "../data/users";
 
 const root = {
   posts: ({ options }) => {
@@ -45,12 +45,8 @@ const root = {
     if (!post) {
       return null;
     }
-    const updatedPost = {
-      id: String(id),
-      title: input.title,
-      body: input.body,
-      ...post,
-    };
+    const { title, body } = input;
+    const updatedPost = { ...post, id: String(id), title, body };
     posts[id - 1] = updatedPost;
     return updatedPost;
   },
